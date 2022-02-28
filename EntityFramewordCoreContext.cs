@@ -14,6 +14,7 @@ namespace form_whizz_api
         public DbSet<QuestionResponseDatabaseModel> questionResponses { get; set; }
         public DbSet<QuestionResponseGroupDatabaseModel> questionResponseGroups { get; set; }
         public DbSet<QuestionTemplateDatabaseModel> questionTemplates { get; set; }
+        public DbSet<QuestionTypeDatabaseModel> questionTypes { get; set; }
         
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
             => optionsBuilder.UseNpgsql("Host=localhost;Database=form_whizz;Username=sa;Password=pass");
